@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+</head>
+<body class="container">
+    <header>
+        <%- include('../partials/plugins/header'); %>
+    </header>
+   <center> <main>
+        <div class="jumbotron">
+            <h1><%= username %> - Takım Sistemi</h1>
+             <form id="plugins-form" method="POST" action="/plugins">
+<br><br>
+              <label>1.Takım Adı: </label> 
+              <input type="text" id="takim1" name="takim1" value=<%= takim1 %>><br>
+               <label>2.Takım Adı: </label> 
+              <input type="text" id="takim2" name="takim2" value=<%= takim2 %>><br>
+               <label>3.Takım Adı: </label> 
+              <input type="text" id="takim3" name="takim3" value=<%= takim3 %>><br>
+               <label>4.Takım Adı: </label> 
+              <input type="text" id="takim4" name="takim4" value=<%= takim4 %>><br>
+               <label>5.Takım Adı: </label> 
+              <input type="text" id="takim5" name="takim5" value=<%= takim5 %>><br>
+               <label>6.Takım Adı: </label> 
+              <input type="text" id="takim6" name="takim6" value=<%= takim6 %>><br>
+               <label>7.Takım Adı: </label> 
+              <input type="text" id="takim7" name="takim7" value=<%= takim7 %>><br>
+               <label>8.Takım Adı: </label> 
+              <input type="text" id="takim8" name="takim8" value=<%= takim8 %>><br>
+               <label>9.Takım Adı: </label> 
+              <input type="text" id="takim9" name="takim9" value=<%= takim9 %>><br>
+               <label>10.Takım Adı: </label> 
+              <input type="text" id="takim10" name="takim10" value=<%= takim10 %>><br>
+               <label>11.Takım Adı: </label> 
+              <input type="text" id="takim11" name="takim11" value=<%= takim11 %>><br>
+               <label>12.Takım Adı: </label> 
+              <input type="text" id="takim12" name="takim12" value=<%= takim12 %>><br>
+               <label>13.Takım Adı: </label> 
+              <input type="text" id="takim14" name="takim13" value=<%= takim13 %>><br>
+               <label>14.Takım Adı: </label> 
+              <input type="text" id="takim14" name="takim14" value=<%= takim14 %>><br>
+               <label>15.Takım Adı: </label> 
+              <input type="text" id="takim15" name="takim15" value=<%= takim15 %>><br>
+               <label>16.Takım Adı: </label> 
+              <input type="text" id="takim16" name="takim16" value=<%= takim16 %>><br>
+               <label>17.Takım Adı: </label> 
+              <input type="text" id="takim17" name="takim17" value=<%= takim17 %>><br>
+               <label>18.Takım Adı: </label> 
+              <input type="text" id="takim18" name="takim18" value=<%= takim18 %>><br>
+               
+               <br> <br>
+     <input type="submit" style="width: 500px; height: 80px;" value="Değişiklikleri Kaydet"></br>
+            </br>
+      </form>
+        </div>
+  </main></center>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+           <script>
+
+ const options = {
+        bottom: '64px', // default: '32px'
+        right: '32px', // default: '32px'
+        time: '1.5s', // default: '0.3s'
+        backgroundColor: '#fff',  // default: '#fff'
+        buttonColorDark: '#100f2c',  // default: '#100f2c'
+        buttonColorLight: '#fff', // default: '#fff'
+        saveInCookies: true, // default: true,
+        label: '🌓', // default: ''
+        autoMatchOsTheme: true // default: true
+      }
+      
+      const darkmode = new Darkmode(options);
+      darkmode.showWidget();
+  </script>  
+</body>
+</html>

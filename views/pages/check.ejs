@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+</head>
+<body class="container">
+
+    <header>
+        <%- include('../partials/check/header'); %>
+    </header>
+
+   <center> <main>
+        <div class="jumbotron">
+            <h1>Lütfen Tüm Kısımları giriniz!</h1>
+          <h2>
+            Sonrasında "Değişiklikleri Kaydet"e tıklayınız
+          </h2>
+          <br></br>
+  <center> <form id="check-form" method="POST" action="/check">
+
+    <p>
+      --------------------- Check-In ---------------------
+    </p>
+                          <label for="Title1">Başlık:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text" style="width: 500px; height: 50px;" id="Title1" name="Title1" value=<%= Title1 %>><br> 
+               
+                          <label for="Description1">Açıklama:</label> 
+              <input type="text" style="width: 500px; height: 180px;" id="Description1" name="Description1" value=<%= Description1 %>><br> 
+               
+                   <p>
+                     --------------------- Check-In Close ---------------------
+    </p>
+             <label for="Title2">Başlık:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text" style="width: 500px; height: 50px;" id="Title2" name="Title2" value=<%= Title2 %>><br> 
+               
+                          <label for="Description2">Açıklama:</label> 
+              <input type="text" style="width: 500px; height: 180px;" id="Description2" name="Description2" value=<%= Description2 %>><br> 
+               
+          <br>
+     <input type="submit" style="width: 500px; height: 80px;" value="Değişiklikleri Kaydet"></br>
+    </form> </center> 
+      
+
+        </div>
+  </main></center>
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+<script>
+    const options = {
+        bottom: '64px', // default: '32px'
+        right: '32px', // default: '32px'
+        time: '1.5s', // default: '0.3s'
+        backgroundColor: '#fff',  // default: '#fff'
+        buttonColorDark: '#100f2c',  // default: '#100f2c'
+        buttonColorLight: '#fff', // default: '#fff'
+        saveInCookies: true, // default: true,
+        label: '🌓', // default: ''
+        autoMatchOsTheme: true // default: true
+      }
+      
+      const darkmode = new Darkmode(options);
+      darkmode.showWidget();
+  
+  
+</script>
+</body>
+</html>

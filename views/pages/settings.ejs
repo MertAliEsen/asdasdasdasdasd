@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container" style="background-color: #000;">
+    <header>
+        <%- include('../partials/settings/header'); %>
+    </header>
+
+ <center><main style="background-color: #000;">
+        <div ><br>
+          
+ <center><main style="background-color: #000;">
+        <div> <br>
+          
+                <center>      <h1 style="color: #fff"><%= username %> - Puan Sistemi</h1>
+ 
+          <h2 style="color: #fff">
+            Lütfen "Değişiklikleri Kaydet"e Tıklamayı Unutmayın :)  
+          </h2></center>
+   <form id="settings-form" method="POST" action="/settings">
+  <br> 
+   
+    <input type="text" style="text-align: center" style="background-color: #ffffff;"  style="background-color: #ffffff;" size="12" name="tarih" value="<%= tarih %>" placeholder="Tarih"> 
+   <br><br>
+     <input type="text" style="background-color: #ffffff;"  style="background-color: #ffffff;" size="18" name="takim1" value="<%= takim1 %>" placeholder="Takım 1"> 
+     
+     &nbsp;:&nbsp;&nbsp;
+     <input type="text" style="background-color: #007dff;" id="kp1bir" style="background-color: #007dff;"  size="2" name="kp1bir" style="background-color: #007dff;"  value=<%= kp1bir %>>
+     <input type="text" style="background-color: #007dff;" id="sp1bir" style="background-color: #007dff;"  size="2" name="sp1bir" style="background-color: #007dff;"  value=<%= sp1bir %>> |
+          <input type="text" style="background-color: #ff0000;" id="kp1iki" style="background-color: #ff0000;" size="2" name="kp1iki" style="background-color: #ff0000;" value=<%= kp1iki %>>
+     <input type="text" style="background-color: #ff0000;" id="sp1iki" style="background-color: #ff0000;" size="2" name="sp1iki" style="background-color: #ff0000;" value=<%= sp1iki %>> |
+          <input type="text" style="background-color: #ef9d00;" id="kp1üç" style="background-color: #ef9d00;" size="2" name="kp1üç" style="background-color: #ef9d00;" value=<%= kp1üç %>>
+     <input type="text" style="background-color: #ef9d00;" id="sp1üç" style="background-color: #ef9d00;" size="2" name="sp1üç" style="background-color: #ef9d00;" value=<%= sp1üç %>> |
+          <input type="text" style="background-color: #41cf00;" id="kp1dört" style="background-color: #41cf00;" size="2" name="kp1dört" style="background-color: #41cf00;" value=<%= kp1dört %>>
+     <input type="text" style="background-color: #41cf00;" id="sp1dört" style="background-color: #41cf00;" size="2" name="sp1dört" style="background-color: #41cf00;" value=<%= sp1dört %>> |
+          <input type="text" style="background-color: #ff00ec;" id="kp1beş" style="background-color: #ff00ec;" size="2" name="kp1beş" style="background-color: #ff00ec;" value=<%= kp1beş %>>
+     <input type="text" style="background-color: #ff00ec;" id="sp1beş" style="background-color: #ff00ec;" size="2" name="sp1beş" style="background-color: #ff00ec;" value=<%= sp1beş %>>
+     
+     <br>
+
+       
+     <br> 
+               
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim2" value="<%= takim2 %>" placeholder="Takım 2"> &nbsp;:&nbsp;&nbsp;
+      <input type="text" id="kp2bir" style="background-color: #007dff;"  name="kp2bir" style="background-color: #007dff;"  size="2" value=<%= kp2bir %>>
+     <input type="text" id="sp2bir" style="background-color: #007dff;"  name="sp2bir" style="background-color: #007dff;"  size="2" value=<%= sp2bir %>> |
+          <input type="text" id="kp2iki" style="background-color: #ff0000;" name="kp2iki" style="background-color: #ff0000;" size="2" value=<%= kp2iki %>>
+     <input type="text" id="sp2iki" style="background-color: #ff0000;" name="sp2iki" style="background-color: #ff0000;" size="2" value=<%= sp2iki %>> |
+          <input type="text" id="kp2üç" style="background-color: #ef9d00;" name="kp2üç" style="background-color: #ef9d00;" size="2" value=<%= kp2üç %>>
+     <input type="text" id="sp2üç" style="background-color: #ef9d00;" name="sp2üç" style="background-color: #ef9d00;" size="2" value=<%= sp2üç %>> |
+          <input type="text" id="kp2dört" style="background-color: #41cf00;" name="kp2dört" style="background-color: #41cf00;" size="2" value=<%= kp2dört %>>
+     <input type="text" id="sp2dört" style="background-color: #41cf00;" name="sp2dört" style="background-color: #41cf00;" size="2" value=<%= sp2dört %>> |
+          <input type="text" id="kp2beş" style="background-color: #ff00ec;" name="kp2beş" style="background-color: #ff00ec;" size="2" value=<%= kp2beş %>>
+     <input type="text" id="sp2beş" style="background-color: #ff00ec;" name="sp2beş" style="background-color: #ff00ec;" size="2" value=<%= sp2beş %>>
+               <br> <br>
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim3" value="<%= takim3 %>" placeholder="Takım 3"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp3bir" style="background-color: #007dff;"  name="kp3bir" style="background-color: #007dff;"  size="2" value=<%= kp3bir %>>
+     <input type="text" id="sp3bir" style="background-color: #007dff;"  name="sp3bir" style="background-color: #007dff;"  size="2" value=<%= sp3bir %>> |
+     <input type="text" id="kp3iki" style="background-color: #ff0000;" name="kp3iki" style="background-color: #ff0000;" size="2" value=<%= kp3iki %>>
+     <input type="text" id="sp3iki" style="background-color: #ff0000;" name="sp3iki" style="background-color: #ff0000;" size="2" value=<%= sp3iki %>> |
+          <input type="text" id="kp3üç" style="background-color: #ef9d00;" name="kp3üç" style="background-color: #ef9d00;" size="2" value=<%= kp3üç %>>
+     <input type="text" id="sp3üç" style="background-color: #ef9d00;" name="sp3üç" style="background-color: #ef9d00;" size="2" value=<%= sp3üç %>> |
+              <input type="text" id="kp3dört" style="background-color: #41cf00;" name="kp3dört" style="background-color: #41cf00;" size="2" value=<%= kp3dört %>>
+     <input type="text" id="sp3dört" style="background-color: #41cf00;" name="sp3dört" style="background-color: #41cf00;" size="2" value=<%= sp3dört %>> |
+              <input type="text" id="kp3beş" style="background-color: #ff00ec;" name="kp3beş" style="background-color: #ff00ec;" size="2" value=<%= kp3beş %>>
+     <input type="text" id="sp3beş" style="background-color: #ff00ec;" name="sp3beş" style="background-color: #ff00ec;" size="2" value=<%= sp3beş %>> <br> <br>
+               
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim4" value="<%= takim4 %>" placeholder="Takım 4"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp4bir" style="background-color: #007dff;"  name="kp4bir" style="background-color: #007dff;"  size="2" value=<%= kp4bir %>>
+     <input type="text" id="sp4bir" style="background-color: #007dff;"  name="sp4bir" style="background-color: #007dff;"  size="2" value=<%= sp4bir %>> |
+          <input type="text" id="kp4iki" style="background-color: #ff0000;" name="kp4iki" style="background-color: #ff0000;" size="2" value=<%= kp4iki %>>
+     <input type="text" id="sp4iki" style="background-color: #ff0000;" name="sp4iki" style="background-color: #ff0000;" size="2" value=<%= sp4iki %>> |
+          <input type="text" id="kp4üç" style="background-color: #ef9d00;" name="kp4üç" style="background-color: #ef9d00;" size="2" value=<%= kp4üç %>>
+     <input type="text" id="sp4üç" style="background-color: #ef9d00;" name="sp4üç" style="background-color: #ef9d00;" size="2" value=<%= sp4üç %>> |
+          <input type="text" id="kp4dört" style="background-color: #41cf00;" name="kp4dört" style="background-color: #41cf00;" size="2" value=<%= kp4dört %>>
+     <input type="text" id="sp4dört" style="background-color: #41cf00;" name="sp4dört" style="background-color: #41cf00;" size="2" value=<%= sp4dört %>> |
+              <input type="text" id="kp4beş" style="background-color: #ff00ec;" name="kp4beş" style="background-color: #ff00ec;" size="2" value=<%= kp4beş %>>
+     <input type="text" id="sp4beş" style="background-color: #ff00ec;" name="sp4beş" style="background-color: #ff00ec;" size="2" value=<%= sp4beş %>>
+
+     <br> <br>
+               
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim5" value="<%= takim5 %>" placeholder="Takım 5"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp5bir" style="background-color: #007dff;"  name="kp5bir" style="background-color: #007dff;"  size="2" value=<%= kp5bir %>>
+     <input type="text" id="sp5bir" style="background-color: #007dff;"  name="sp5bir" style="background-color: #007dff;"  size="2" value=<%= sp5bir %>> |
+          <input type="text" id="kp5iki" style="background-color: #ff0000;" name="kp5iki" style="background-color: #ff0000;" size="2" value=<%= kp5iki %>>
+     <input type="text" id="sp5iki" style="background-color: #ff0000;" name="sp5iki" style="background-color: #ff0000;" size="2" value=<%= sp5iki %>> |
+          <input type="text" id="kp5üç" style="background-color: #ef9d00;" name="kp5üç" style="background-color: #ef9d00;" size="2" value=<%= kp5üç %>>
+     <input type="text" id="sp5üç" style="background-color: #ef9d00;" name="sp5üç" style="background-color: #ef9d00;" size="2" value=<%= sp5üç %>> |
+           <input type="text" id="kp5dört" style="background-color: #41cf00;" name="kp5dört" style="background-color: #41cf00;" size="2" value=<%= kp5dört %>>
+     <input type="text" id="sp5dört" style="background-color: #41cf00;" name="sp5dört" style="background-color: #41cf00;" size="2" value=<%= sp5dört %>> |
+              <input type="text" id="kp5beş" style="background-color: #ff00ec;" name="kp5beş" style="background-color: #ff00ec;" size="2" value=<%= kp5beş %>>
+     <input type="text" id="sp5beş" style="background-color: #ff00ec;" name="sp5beş" style="background-color: #ff00ec;" size="2" value=<%= sp5beş %>>
+
+     <br> <br>
+               
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim6" value="<%= takim6 %>" placeholder="Takım 6"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp6bir" style="background-color: #007dff;"  name="kp6bir" style="background-color: #007dff;"  size="2" value=<%= kp6bir %>>
+     <input type="text" id="sp6bir" style="background-color: #007dff;"  name="sp6bir" style="background-color: #007dff;"  size="2" value=<%= sp6bir %>> |
+      <input type="text" id="kp6iki" style="background-color: #ff0000;" name="kp6iki" style="background-color: #ff0000;" size="2" value=<%= kp6iki %>>
+     <input type="text" id="sp6iki" style="background-color: #ff0000;" name="sp6iki" style="background-color: #ff0000;" size="2" value=<%= sp6iki %>> |
+      <input type="text" id="kp6üç" style="background-color: #ef9d00;" name="kp6üç" style="background-color: #ef9d00;" size="2" value=<%= kp6üç %>>
+     <input type="text" id="sp6üç" style="background-color: #ef9d00;" name="sp6üç" style="background-color: #ef9d00;" size="2" value=<%= sp6üç %>> |
+            <input type="text" id="kp6dört" style="background-color: #41cf00;" name="kp6dört" style="background-color: #41cf00;" size="2" value=<%= kp6dört %>>
+     <input type="text" id="sp6dört" style="background-color: #41cf00;" name="sp6dört" style="background-color: #41cf00;" size="2" value=<%= sp6dört %>> |
+              <input type="text" id="kp6beş" style="background-color: #ff00ec;" name="kp6beş" style="background-color: #ff00ec;" size="2" value=<%= kp6beş %>>
+     <input type="text" id="sp6beş" style="background-color: #ff00ec;" name="sp6beş" style="background-color: #ff00ec;" size="2" value=<%= sp6beş %>>
+<br>
+
+     <br> 
+               
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim7" value="<%= takim7 %>" placeholder="Takım 7"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp7bir" style="background-color: #007dff;"  name="kp7bir" style="background-color: #007dff;"  size="2" value=<%= kp7bir %>>
+     <input type="text" id="sp7bir" style="background-color: #007dff;"  name="sp7bir" style="background-color: #007dff;"  size="2" value=<%= sp7bir %>> |
+     <input type="text" id="kp7iki" style="background-color: #ff0000;" name="kp7iki" style="background-color: #ff0000;" size="2" value=<%= kp7iki %>>
+     <input type="text" id="sp7iki" style="background-color: #ff0000;" name="sp7iki" style="background-color: #ff0000;" size="2" value=<%= sp7iki %>> |
+     <input type="text" id="kp7üç" style="background-color: #ef9d00;" name="kp7üç" style="background-color: #ef9d00;" size="2" value=<%= kp7üç %>>
+     <input type="text" id="sp7üç" style="background-color: #ef9d00;" name="sp7üç" style="background-color: #ef9d00;" size="2" value=<%= sp7üç %>> |
+          <input type="text" id="kp7dört" style="background-color: #41cf00;" name="kp7dört" style="background-color: #41cf00;" size="2" value=<%= kp7dört %>>
+     <input type="text" id="sp7dört" style="background-color: #41cf00;" name="sp7dört" style="background-color: #41cf00;" size="2" value=<%= sp7dört %>> |
+              <input type="text" id="kp7beş" style="background-color: #ff00ec;" name="kp7beş" style="background-color: #ff00ec;" size="2" value=<%= kp7beş %>>
+     <input type="text" id="sp7beş" style="background-color: #ff00ec;" name="sp7beş" style="background-color: #ff00ec;" size="2" value=<%= sp7beş %>>
+
+
+     <br> <br>
+               
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim8" value="<%= takim8 %>" placeholder="Takım 8"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp8bir" style="background-color: #007dff;"  name="kp8bir" style="background-color: #007dff;"  size="2" value=<%= kp8bir %>>
+     <input type="text" id="sp8bir" style="background-color: #007dff;"  name="sp8bir" style="background-color: #007dff;"  size="2" value=<%= sp8bir %>> |
+      <input type="text" id="kp8iki" style="background-color: #ff0000;" name="kp8iki" style="background-color: #ff0000;" size="2" value=<%= kp8iki %>>
+     <input type="text" id="sp8iki" style="background-color: #ff0000;" name="sp8iki" style="background-color: #ff0000;" size="2" value=<%= sp8iki %>> |
+      <input type="text" id="kp8üç" style="background-color: #ef9d00;" name="kp8üç" style="background-color: #ef9d00;" size="2" value=<%= kp8üç %>>
+     <input type="text" id="sp8üç" style="background-color: #ef9d00;" name="sp8üç" style="background-color: #ef9d00;" size="2" value=<%= sp8üç %>> |
+            <input type="text" id="kp8dört" style="background-color: #41cf00;" name="kp8dört" style="background-color: #41cf00;" size="2" value=<%= kp8dört %>>
+     <input type="text" id="sp8dört" style="background-color: #41cf00;" name="sp8dört" style="background-color: #41cf00;" size="2" value=<%= sp8dört %>> |
+              <input type="text" id="kp8beş" style="background-color: #ff00ec;" name="kp8beş" style="background-color: #ff00ec;" size="2" value=<%= kp8beş %>>
+     <input type="text" id="sp8beş" style="background-color: #ff00ec;" name="sp8beş" style="background-color: #ff00ec;" size="2" value=<%= sp8beş %>>
+
+
+     <br> 
+               <br>
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim9" value="<%= takim9 %>" placeholder="Takım 9"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp9bir" style="background-color: #007dff;"  name="kp9bir" style="background-color: #007dff;"  size="2" value=<%= kp9bir %>>
+     <input type="text" id="sp9bir" style="background-color: #007dff;"  name="sp9bir" style="background-color: #007dff;"  size="2" value=<%= sp9bir %>> |
+     <input type="text" id="kp9iki" style="background-color: #ff0000;" name="kp9iki" style="background-color: #ff0000;" size="2" value=<%= kp9iki %>>
+     <input type="text" id="sp9iki" style="background-color: #ff0000;" name="sp9iki" style="background-color: #ff0000;" size="2" value=<%= sp9iki %>> |
+     <input type="text" id="kp9üç" style="background-color: #ef9d00;" name="kp9üç" style="background-color: #ef9d00;" size="2" value=<%= kp9üç %>>
+     <input type="text" id="sp9üç" style="background-color: #ef9d00;" name="sp9üç" style="background-color: #ef9d00;" size="2" value=<%= sp9üç %>> |
+           <input type="text" id="kp9dört" style="background-color: #41cf00;" name="kp9dört" style="background-color: #41cf00;" size="2" value=<%= kp9dört %>>
+     <input type="text" id="sp9dört" style="background-color: #41cf00;" name="sp9dört" style="background-color: #41cf00;" size="2" value=<%= sp9dört %>> |
+              <input type="text" id="kp9beş" style="background-color: #ff00ec;" name="kp9beş" style="background-color: #ff00ec;" size="2" value=<%= kp9beş %>>
+     <input type="text" id="sp9beş" style="background-color: #ff00ec;" name="sp9beş" style="background-color: #ff00ec;" size="2" value=<%= sp9beş %>>
+
+<br>
+     <br> 
+              
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim10" value="<%= takim10 %>" placeholder="Takım 10"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp10bir" style="background-color: #007dff;"  name="kp10bir" style="background-color: #007dff;"  size="2" size="2" value=<%= kp10bir %>>
+     <input type="text" id="sp10bir" style="background-color: #007dff;"  name="sp10bir" style="background-color: #007dff;"  size="2" size="2" value=<%= sp10bir %>> |
+     <input type="text" id="kp10iki" style="background-color: #ff0000;" name="kp10iki" style="background-color: #ff0000;" size="2" size="2" value=<%= kp10iki %>>
+     <input type="text" id="sp10iki" style="background-color: #ff0000;" name="sp10iki" style="background-color: #ff0000;" size="2" size="2" value=<%= sp10iki %>> |
+     <input type="text" id="kp10üç" style="background-color: #ef9d00;" name="kp10üç" style="background-color: #ef9d00;" size="2" size="2" value=<%= kp10üç %>>
+     <input type="text" id="sp10üç" style="background-color: #ef9d00;" name="sp10üç" style="background-color: #ef9d00;" size="2" size="2" value=<%= sp10üç %>> |
+           <input type="text" id="kp10dört" style="background-color: #41cf00;" name="kp10dört" style="background-color: #41cf00;" size="2" value=<%= kp10dört %>>
+     <input type="text" id="sp10dört" style="background-color: #41cf00;" name="sp10dört" style="background-color: #41cf00;" size="2" value=<%= sp10dört %>> |
+              <input type="text" id="kp10beş" style="background-color: #ff00ec;" name="kp10beş" style="background-color: #ff00ec;" size="2" value=<%= kp10beş %>>
+     <input type="text" id="sp10beş" style="background-color: #ff00ec;" name="sp10beş" style="background-color: #ff00ec;" size="2" value=<%= sp10beş %>>
+<br><br>
+      
+              
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim11" value="<%= takim11 %>" placeholder="Takım 11"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp11bir" style="background-color: #007dff;"  name="kp11bir" style="background-color: #007dff;"  size="2" size="2" value=<%= kp11bir %>>
+     <input type="text" id="sp11bir" style="background-color: #007dff;"  name="sp11bir" style="background-color: #007dff;"  size="2" size="2" value=<%= sp11bir %>> |
+      <input type="text" id="kp11iki" style="background-color: #ff0000;" name="kp11iki" style="background-color: #ff0000;" size="2" size="2" value=<%= kp11iki %>>
+     <input type="text" id="sp11iki" style="background-color: #ff0000;" name="sp11iki" style="background-color: #ff0000;" size="2" size="2" value=<%= sp11iki %>> |
+      <input type="text" id="kp11üç" style="background-color: #ef9d00;" name="kp11üç" style="background-color: #ef9d00;" size="2" size="2" value=<%= kp11üç %>>
+     <input type="text" id="sp11üç" style="background-color: #ef9d00;" name="sp11üç" style="background-color: #ef9d00;" size="2" size="2" value=<%= sp11üç %>> |
+            <input type="text" id="kp11dört" style="background-color: #41cf00;" name="kp11dört" style="background-color: #41cf00;" size="2" value=<%= kp11dört %>>
+     <input type="text" id="sp11dört" style="background-color: #41cf00;" name="sp11dört" style="background-color: #41cf00;" size="2" value=<%= sp11dört %>> |
+              <input type="text" id="kp11beş" style="background-color: #ff00ec;" name="kp11beş" style="background-color: #ff00ec;" size="2" value=<%= kp11beş %>>
+     <input type="text" id="sp11beş" style="background-color: #ff00ec;" name="sp11beş" style="background-color: #ff00ec;" size="2" value=<%= sp11beş %>>
+
+<br>
+      
+               <br>
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim12" value="<%= takim12 %>" placeholder="Takım 12"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp12bir" style="background-color: #007dff;"  name="kp12bir" style="background-color: #007dff;"  size="2" size="2" value=<%= kp12bir %>>
+     <input type="text" id="sp12bir" style="background-color: #007dff;"  name="sp12bir" style="background-color: #007dff;"  size="2" size="2" value=<%= sp12bir %>> |
+     <input type="text" id="kp12iki" style="background-color: #ff0000;" name="kp12iki" style="background-color: #ff0000;" size="2" size="2" value=<%= kp12iki %>>
+     <input type="text" id="sp12iki" style="background-color: #ff0000;" name="sp12iki" style="background-color: #ff0000;" size="2" size="2" value=<%= sp12iki %>> |
+     <input type="text" id="kp12üç" style="background-color: #ef9d00;" name="kp12üç" style="background-color: #ef9d00;" size="2" size="2" value=<%= kp12üç %>>
+     <input type="text" id="sp12üç" style="background-color: #ef9d00;" name="sp12üç" style="background-color: #ef9d00;" size="2" size="2" value=<%= sp12üç %>> |
+          <input type="text" id="kp12dört" style="background-color: #41cf00;" name="kp12dört" style="background-color: #41cf00;" size="2" value=<%= kp12dört %>>
+     <input type="text" id="sp12dört" style="background-color: #41cf00;" name="sp12dört" style="background-color: #41cf00;" size="2" value=<%= sp12dört %>> |
+              <input type="text" id="kp12beş" style="background-color: #ff00ec;" name="kp12beş" style="background-color: #ff00ec;" size="2" value=<%= kp12beş %>>
+     <input type="text" id="sp12beş" style="background-color: #ff00ec;" name="sp12beş" style="background-color: #ff00ec;" size="2" value=<%= sp12beş %>>
+
+<br>
+     <br> 
+               
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim13" value="<%= takim13 %>" placeholder="Takım 13"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp13bir" style="background-color: #007dff;"  name="kp13bir" style="background-color: #007dff;"  size="2" size="2" value=<%= kp13bir %>>
+     <input type="text" id="sp13bir" style="background-color: #007dff;"  name="sp13bir" style="background-color: #007dff;"  size="2" size="2" value=<%= sp13bir %>> |
+          <input type="text" id="kp13iki" style="background-color: #ff0000;" name="kp13iki" style="background-color: #ff0000;" size="2" size="2" value=<%= kp13iki %>>
+     <input type="text" id="sp13iki" style="background-color: #ff0000;" name="sp13iki" style="background-color: #ff0000;" size="2" size="2" value=<%= sp13iki %>> |
+          <input type="text" id="kp13üç" style="background-color: #ef9d00;" name="kp13üç" style="background-color: #ef9d00;" size="2" size="2" value=<%= kp13üç %>>
+     <input type="text" id="sp13üç" style="background-color: #ef9d00;" name="sp13üç" style="background-color: #ef9d00;" size="2" size="2" value=<%= sp13üç %>> |
+            <input type="text" id="kp13dört" style="background-color: #41cf00;" name="kp13dört" style="background-color: #41cf00;" size="2" value=<%= kp13dört %>>
+     <input type="text" id="sp13dört" style="background-color: #41cf00;" name="sp13dört" style="background-color: #41cf00;" size="2" value=<%= sp13dört %>> |
+              <input type="text" id="kp13beş" style="background-color: #ff00ec;" name="kp13beş" style="background-color: #ff00ec;" size="2" value=<%= kp13beş %>>
+     <input type="text" id="sp13beş" style="background-color: #ff00ec;" name="sp13beş" style="background-color: #ff00ec;" size="2" value=<%= sp13beş %>>
+<br>
+     <br> 
+               
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim14" value="<%= takim14 %>" placeholder="Takım 14"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp14bir" style="background-color: #007dff;"  name="kp14bir" style="background-color: #007dff;"  size="2" size="2" value=<%= kp14bir %>>
+     <input type="text" id="sp14bir" style="background-color: #007dff;"  name="sp14bir" style="background-color: #007dff;"  size="2" size="2" value=<%= sp14bir %>> |
+          <input type="text" id="kp14iki" style="background-color: #ff0000;" name="kp14iki" style="background-color: #ff0000;" size="2" size="2" value=<%= kp14iki %>>
+     <input type="text" id="sp14iki" style="background-color: #ff0000;" name="sp14iki" style="background-color: #ff0000;" size="2" size="2" value=<%= sp14iki %>> |
+          <input type="text" id="kp14üç" style="background-color: #ef9d00;" name="kp14üç" style="background-color: #ef9d00;" size="2" size="2" value=<%= kp14üç %>>
+     <input type="text" id="sp14üç" style="background-color: #ef9d00;" name="sp14üç" style="background-color: #ef9d00;" size="2" size="2" value=<%= sp14üç %>> |
+           <input type="text" id="kp14dört" style="background-color: #41cf00;" name="kp14dört" style="background-color: #41cf00;" size="2" value=<%= kp14dört %>>
+     <input type="text" id="sp14dört" style="background-color: #41cf00;" name="sp14dört" style="background-color: #41cf00;" size="2" value=<%= sp14dört %>> |
+              <input type="text" id="kp14beş" style="background-color: #ff00ec;" name="kp14beş" style="background-color: #ff00ec;" size="2" value=<%= kp14beş %>>
+     <input type="text" id="sp14beş" style="background-color: #ff00ec;" name="sp14beş" style="background-color: #ff00ec;" size="2" value=<%= sp14beş %>>
+
+     <br> 
+               <br>
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim15" value="<%= takim15 %>" placeholder="Takım 15"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp15bir" style="background-color: #007dff;"  name="kp15bir" style="background-color: #007dff;"  size="2" value=<%= kp15bir %>>
+     <input type="text" id="sp15bir" style="background-color: #007dff;"  name="sp15bir" style="background-color: #007dff;"  size="2" value=<%= sp15bir %>> |
+          <input type="text" id="kp15iki" style="background-color: #ff0000;" name="kp15iki" style="background-color: #ff0000;" size="2" value=<%= kp15iki %>>
+     <input type="text" id="sp15iki" style="background-color: #ff0000;" name="sp15iki" style="background-color: #ff0000;" size="2" value=<%= sp15iki %>> |
+          <input type="text" id="kp15üç" style="background-color: #ef9d00;" name="kp15üç" style="background-color: #ef9d00;" size="2" value=<%= kp15üç %>>
+     <input type="text" id="sp15üç" style="background-color: #ef9d00;" name="sp15üç" style="background-color: #ef9d00;" size="2" value=<%= sp15üç %>> |
+          <input type="text" id="kp15dört" style="background-color: #41cf00;" name="kp15dört" style="background-color: #41cf00;" size="2" value=<%= kp15dört %>>
+     <input type="text" id="sp15dört" style="background-color: #41cf00;" name="sp15dört" style="background-color: #41cf00;" size="2" value=<%= sp15dört %>> |
+              <input type="text" id="kp15beş" style="background-color: #ff00ec;" name="kp15beş" style="background-color: #ff00ec;" size="2" value=<%= kp15beş %>>
+     <input type="text" id="sp15beş" style="background-color: #ff00ec;" name="sp15beş" style="background-color: #ff00ec;" size="2" value=<%= sp15beş %>>
+
+     <br> 
+           <br>    
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim16" value="<%= takim16 %>" placeholder="Takım 16"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp16bir" style="background-color: #007dff;"  name="kp16bir" style="background-color: #007dff;"  size="2" value=<%= kp16bir %>>
+     <input type="text" id="sp16bir" style="background-color: #007dff;"  name="sp16bir" style="background-color: #007dff;"  size="2" value=<%= sp16bir %>> |
+          <input type="text" id="kp16iki" style="background-color: #ff0000;" name="kp16iki" style="background-color: #ff0000;" size="2" value=<%= kp16iki %>>
+     <input type="text" id="sp16iki" style="background-color: #ff0000;" name="sp16iki" style="background-color: #ff0000;" size="2" value=<%= sp16iki %>> |
+          <input type="text" id="kp16üç" style="background-color: #ef9d00;" name="kp16üç" style="background-color: #ef9d00;" size="2" value=<%= kp16üç %>>
+     <input type="text" id="sp16üç" style="background-color: #ef9d00;" name="sp16üç" style="background-color: #ef9d00;" size="2" value=<%= sp16üç %>> |
+           <input type="text" id="kp16dört" style="background-color: #41cf00;" name="kp16dört" style="background-color: #41cf00;" size="2" value=<%= kp16dört %>>
+     <input type="text" id="sp16dört" style="background-color: #41cf00;" name="sp16dört" style="background-color: #41cf00;" size="2" value=<%= sp16dört %>> |
+              <input type="text" id="kp16beş" style="background-color: #ff00ec;" name="kp16beş" style="background-color: #ff00ec;" size="2" value=<%= kp16beş %>>
+     <input type="text" id="sp16beş" style="background-color: #ff00ec;" name="sp16beş" style="background-color: #ff00ec;" size="2" value=<%= sp16beş %>>
+
+<br>
+     <br> 
+               
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim17" value="<%= takim17 %>" placeholder="Takım 17"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp17bir" style="background-color: #007dff;"  name="kp17bir" style="background-color: #007dff;"  size="2" value=<%= kp17bir %>>
+     <input type="text" id="sp17bir" style="background-color: #007dff;"  name="sp17bir" style="background-color: #007dff;"  size="2" value=<%= sp17bir %>> |
+          <input type="text" id="kp17iki" style="background-color: #ff0000;" name="kp17iki" style="background-color: #ff0000;" size="2" value=<%= kp17iki %>>
+     <input type="text" id="sp17iki" style="background-color: #ff0000;" name="sp17iki" style="background-color: #ff0000;" size="2" value=<%= sp17iki %>> |
+          <input type="text" id="kp17üç" style="background-color: #ef9d00;" name="kp17üç" style="background-color: #ef9d00;" size="2" value=<%= kp17üç %>>
+     <input type="text" id="sp17üç" style="background-color: #ef9d00;" name="sp17üç" style="background-color: #ef9d00;" size="2" value=<%= sp17üç %>> |
+            <input type="text" id="kp17dört" style="background-color: #41cf00;" name="kp17dört" style="background-color: #41cf00;" size="2" value=<%= kp17dört %>>
+     <input type="text" id="sp17dört" style="background-color: #41cf00;" name="sp17dört" style="background-color: #41cf00;" size="2" value=<%= sp17dört %>> |
+              <input type="text" id="kp17beş" style="background-color: #ff00ec;" name="kp17beş" style="background-color: #ff00ec;" size="2" value=<%= kp17beş %>>
+     <input type="text" id="sp17beş" style="background-color: #ff00ec;" name="sp17beş" style="background-color: #ff00ec;" size="2" value=<%= sp17beş %>>
+
+
+     <br> <br>
+               
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim18" value="<%= takim18 %>" placeholder="Takım 18"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp18bir" style="background-color: #007dff;"  name="kp18bir" style="background-color: #007dff;"  size="2" value=<%= kp18bir %>>
+     <input type="text" id="sp18bir" style="background-color: #007dff;"  name="sp18bir" style="background-color: #007dff;"  size="2" value=<%= sp18bir %>> |
+       <input type="text" id="kp18iki" style="background-color: #ff0000;" name="kp18iki" style="background-color: #ff0000;" size="2" value=<%= kp18iki %>>
+     <input type="text" id="sp18iki" style="background-color: #ff0000;" name="sp18iki" style="background-color: #ff0000;" size="2" value=<%= sp18iki %>> |
+     <input type="text" id="kp18üç" style="background-color: #ef9d00;" name="kp18üç" style="background-color: #ef9d00;" size="2" value=<%= kp18üç %>>
+       <input type="text" id="sp18üç" style="background-color: #ef9d00;" name="sp18üç" style="background-color: #ef9d00;" size="2" value=<%= sp18üç %>> |
+       <input type="text" id="kp18dört" style="background-color: #41cf00;" name="kp18dört" style="background-color: #41cf00;" size="2" value=<%= kp18dört %>>   
+<input type="text" id="sp18dört" style="background-color: #41cf00;" name="sp18dört" style="background-color: #41cf00;" size="2" value=<%= sp18dört %>> |
+              <input type="text" id="kp18beş" style="background-color: #ff00ec;" name="kp18beş" style="background-color: #ff00ec;" size="2" value=<%= kp18beş %>>
+     <input type="text" id="sp18beş" style="background-color: #ff00ec;" name="sp18beş" style="background-color: #ff00ec;" size="2" value=<%= sp18beş %>>
+
+     <br> 
+               <br>
+     <input type="text"  style="background-color: #ffffff;" size="18" name="takim19" value="<%= takim19 %>" placeholder="Takım 19"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp19bir" style="background-color: #007dff;"  name="kp19bir" style="background-color: #007dff;"  size="2" value=<%= kp19bir %>>
+     <input type="text" id="sp19bir" style="background-color: #007dff;"  name="sp19bir" style="background-color: #007dff;"  size="2" value=<%= sp19bir %>> |
+       <input type="text" id="kp19iki" style="background-color: #ff0000;" name="kp19iki" style="background-color: #ff0000;" size="2" value=<%= kp19iki %>>
+     <input type="text" id="sp19iki" style="background-color: #ff0000;" name="sp19iki" style="background-color: #ff0000;" size="2" value=<%= sp19iki %>> |
+     <input type="text" id="kp19üç" style="background-color: #ef9d00;" name="kp19üç" style="background-color: #ef9d00;" size="2" value=<%= kp19üç %>>
+       <input type="text" id="sp19üç" style="background-color: #ef9d00;" name="sp19üç" style="background-color: #ef9d00;" size="2" value=<%= sp19üç %>> |
+       <input type="text" id="kp19dört" style="background-color: #41cf00;" name="kp19dört" style="background-color: #41cf00;" size="2" value=<%= kp19dört %>>   
+<input type="text" id="sp19dört" style="background-color: #41cf00;" name="sp19dört" style="background-color: #41cf00;" size="2" value=<%= sp19dört %>> |
+              <input type="text" id="kp19beş" style="background-color: #ff00ec;" name="kp19beş" style="background-color: #ff00ec;" size="2" value=<%= kp19beş %>>
+     <input type="text" id="sp19beş" style="background-color: #ff00ec;" name="sp19beş" style="background-color: #ff00ec;" size="2" value=<%= sp19beş %>>
+
+      
+               <br><br>     <input type="text"  style="background-color: #ffffff;" size="18" name="takim20" value="<%= takim20 %>" placeholder="Takım 20"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp20bir" style="background-color: #007dff;"  name="kp20bir" style="background-color: #007dff;"  size="2" value=<%= kp20bir %>>
+     <input type="text" id="sp20bir" style="background-color: #007dff;"  name="sp20bir" style="background-color: #007dff;"  size="2" value=<%= sp20bir %>> |
+       <input type="text" id="kp20iki" style="background-color: #ff0000;" name="kp20iki" style="background-color: #ff0000;" size="2" value=<%= kp20iki %>>
+     <input type="text" id="sp20iki" style="background-color: #ff0000;" name="sp20iki" style="background-color: #ff0000;" size="2" value=<%= sp20iki %>> |
+     <input type="text" id="kp20üç" style="background-color: #ef9d00;" name="kp20üç" style="background-color: #ef9d00;" size="2" value=<%= kp20üç %>>
+       <input type="text" id="sp20üç" style="background-color: #ef9d00;" name="sp20üç" style="background-color: #ef9d00;" size="2" value=<%= sp20üç %>> |
+       <input type="text" id="kp20dört" style="background-color: #41cf00;" name="kp20dört" style="background-color: #41cf00;" size="2" value=<%= kp20dört %>>   
+<input type="text" id="sp20dört" style="background-color: #41cf00;" name="sp20dört" style="background-color: #41cf00;" size="2" value=<%= sp20dört %>> |
+              <input type="text" id="kp20beş" style="background-color: #ff00ec;" name="kp20beş" style="background-color: #ff00ec;" size="2" value=<%= kp20beş %>>
+     <input type="text" id="sp20beş" style="background-color: #ff00ec;" name="sp20beş" style="background-color: #ff00ec;" size="2" value=<%= sp20beş %>>
+
+      
+               <br><br>     <input type="text"  style="background-color: #ffffff;" size="18" name="takim21" value="<%= takim21 %>" placeholder="Takım 21"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp21bir" style="background-color: #007dff;"  name="kp21bir" style="background-color: #007dff;"  size="2" value=<%= kp21bir %>>
+     <input type="text" id="sp21bir" style="background-color: #007dff;"  name="sp21bir" style="background-color: #007dff;"  size="2" value=<%= sp21bir %>> |
+       <input type="text" id="kp21iki" style="background-color: #ff0000;" name="kp21iki" style="background-color: #ff0000;" size="2" value=<%= kp21iki %>>
+     <input type="text" id="sp21iki" style="background-color: #ff0000;" name="sp21iki" style="background-color: #ff0000;" size="2" value=<%= sp21iki %>> |
+     <input type="text" id="kp21üç" style="background-color: #ef9d00;" name="kp21üç" style="background-color: #ef9d00;" size="2" value=<%= kp21üç %>>
+       <input type="text" id="sp21üç" style="background-color: #ef9d00;" name="sp21üç" style="background-color: #ef9d00;" size="2" value=<%= sp21üç %>> |
+       <input type="text" id="kp21dört" style="background-color: #41cf00;" name="kp21dört" style="background-color: #41cf00;" size="2" value=<%= kp21dört %>>   
+<input type="text" id="sp21dört" style="background-color: #41cf00;" name="sp21dört" style="background-color: #41cf00;" size="2" value=<%= sp21dört %>> |
+              <input type="text" id="kp21beş" style="background-color: #ff00ec;" name="kp21beş" style="background-color: #ff00ec;" size="2" value=<%= kp21beş %>>
+     <input type="text" id="sp21beş" style="background-color: #ff00ec;" name="sp21beş" style="background-color: #ff00ec;" size="2" value=<%= sp21beş %>>
+
+      
+               <br><br>     <input type="text"  style="background-color: #ffffff;" size="18" name="takim22" value="<%= takim22 %>" placeholder="Takım 22"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp22bir" style="background-color: #007dff;"  name="kp22bir" style="background-color: #007dff;"  size="2" value=<%= kp22bir %>>
+     <input type="text" id="sp22bir" style="background-color: #007dff;"  name="sp22bir" style="background-color: #007dff;"  size="2" value=<%= sp22bir %>> |
+       <input type="text" id="kp22iki" style="background-color: #ff0000;" name="kp22iki" style="background-color: #ff0000;" size="2" value=<%= kp22iki %>>
+     <input type="text" id="sp22iki" style="background-color: #ff0000;" name="sp22iki" style="background-color: #ff0000;" size="2" value=<%= sp22iki %>> |
+     <input type="text" id="kp22üç" style="background-color: #ef9d00;" name="kp22üç" style="background-color: #ef9d00;" size="2" value=<%= kp22üç %>>
+       <input type="text" id="sp22üç" style="background-color: #ef9d00;" name="sp22üç" style="background-color: #ef9d00;" size="2" value=<%= sp22üç %>> |
+       <input type="text" id="kp22dört" style="background-color: #41cf00;" name="kp22dört" style="background-color: #41cf00;" size="2" value=<%= kp22dört %>>   
+<input type="text" id="sp22dört" style="background-color: #41cf00;" name="sp22dört" style="background-color: #41cf00;" size="2" value=<%= sp22dört %>> |
+              <input type="text" id="kp22beş" style="background-color: #ff00ec;" name="kp22beş" style="background-color: #ff00ec;" size="2" value=<%= kp22beş %>>
+     <input type="text" id="sp22beş" style="background-color: #ff00ec;" name="sp22beş" style="background-color: #ff00ec;" size="2" value=<%= sp22beş %>>
+
+      
+               <br><br>     <input type="text"  style="background-color: #ffffff;" size="18" name="takim23" value="<%= takim23 %>" placeholder="Takım 23"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp23bir" style="background-color: #007dff;"  name="kp23bir" style="background-color: #007dff;"  size="2" value=<%= kp23bir %>>
+     <input type="text" id="sp23bir" style="background-color: #007dff;"  name="sp23bir" style="background-color: #007dff;"  size="2" value=<%= sp23bir %>> |
+       <input type="text" id="kp23iki" style="background-color: #ff0000;" name="kp23iki" style="background-color: #ff0000;" size="2" value=<%= kp23iki %>>
+     <input type="text" id="sp23iki" style="background-color: #ff0000;" name="sp23iki" style="background-color: #ff0000;" size="2" value=<%= sp23iki %>> |
+     <input type="text" id="kp23üç" style="background-color: #ef9d00;" name="kp23üç" style="background-color: #ef9d00;" size="2" value=<%= kp23üç %>>
+       <input type="text" id="sp23üç" style="background-color: #ef9d00;" name="sp23üç" style="background-color: #ef9d00;" size="2" value=<%= sp23üç %>> |
+       <input type="text" id="kp23dört" style="background-color: #41cf00;" name="kp23dört" style="background-color: #41cf00;" size="2" value=<%= kp23dört %>>   
+<input type="text" id="sp23dört" style="background-color: #41cf00;" name="sp23dört" style="background-color: #41cf00;" size="2" value=<%= sp23dört %>> |
+              <input type="text" id="kp23beş" style="background-color: #ff00ec;" name="kp23beş" style="background-color: #ff00ec;" size="2" value=<%= kp23beş %>>
+     <input type="text" id="sp23beş" style="background-color: #ff00ec;" name="sp23beş" style="background-color: #ff00ec;" size="2" value=<%= sp23beş %>>
+
+      
+               <br><br>     <input type="text"  style="background-color: #ffffff;" size="18" name="takim24" value="<%= takim24 %>" placeholder="Takım 24"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp24bir" style="background-color: #007dff;"  name="kp24bir" style="background-color: #007dff;"  size="2" value=<%= kp24bir %>>
+     <input type="text" id="sp24bir" style="background-color: #007dff;"  name="sp24bir" style="background-color: #007dff;"  size="2" value=<%= sp24bir %>> |
+       <input type="text" id="kp24iki" style="background-color: #ff0000;" name="kp24iki" style="background-color: #ff0000;" size="2" value=<%= kp24iki %>>
+     <input type="text" id="sp24iki" style="background-color: #ff0000;" name="sp24iki" style="background-color: #ff0000;" size="2" value=<%= sp24iki %>> |
+     <input type="text" id="kp24üç" style="background-color: #ef9d00;" name="kp24üç" style="background-color: #ef9d00;" size="2" value=<%= kp24üç %>>
+       <input type="text" id="sp24üç" style="background-color: #ef9d00;" name="sp24üç" style="background-color: #ef9d00;" size="2" value=<%= sp24üç %>> |
+       <input type="text" id="kp24dört" style="background-color: #41cf00;" name="kp24dört" style="background-color: #41cf00;" size="2" value=<%= kp24dört %>>   
+<input type="text" id="sp24dört" style="background-color: #41cf00;" name="sp24dört" style="background-color: #41cf00;" size="2" value=<%= sp24dört %>> |
+              <input type="text" id="kp24beş" style="background-color: #ff00ec;" name="kp24beş" style="background-color: #ff00ec;" size="2" value=<%= kp24beş %>>
+     <input type="text" id="sp24beş" style="background-color: #ff00ec;" name="sp24beş" style="background-color: #ff00ec;" size="2" value=<%= sp24beş %>>
+
+      
+               <br><br>     <input type="text"  style="background-color: #ffffff;" size="18" name="takim25" value="<%= takim25 %>" placeholder="Takım 25"> &nbsp;:&nbsp;&nbsp;
+     <input type="text" id="kp25bir" style="background-color: #007dff;"  name="kp25bir" style="background-color: #007dff;"  size="2" value=<%= kp25bir %>>
+     <input type="text" id="sp25bir" style="background-color: #007dff;"  name="sp25bir" style="background-color: #007dff;"  size="2" value=<%= sp25bir %>> |
+       <input type="text" id="kp25iki" style="background-color: #ff0000;" name="kp25iki" style="background-color: #ff0000;" size="2" value=<%= kp25iki %>>
+     <input type="text" id="sp25iki" style="background-color: #ff0000;" name="sp25iki" style="background-color: #ff0000;" size="2" value=<%= sp25iki %>> |
+     <input type="text" id="kp25üç" style="background-color: #ef9d00;" name="kp25üç" style="background-color: #ef9d00;" size="2" value=<%= kp25üç %>>
+       <input type="text" id="sp25üç" style="background-color: #ef9d00;" name="sp25üç" style="background-color: #ef9d00;" size="2" value=<%= sp25üç %>> |
+       <input type="text" id="kp25dört" style="background-color: #41cf00;" name="kp25dört" style="background-color: #41cf00;" size="2" value=<%= kp25dört %>>   
+<input type="text" id="sp25dört" style="background-color: #41cf00;" name="sp25dört" style="background-color: #41cf00;" size="2" value=<%= sp25dört %>> |
+              <input type="text" id="kp25beş" style="background-color: #ff00ec;" name="kp25beş" style="background-color: #ff00ec;" size="2" value=<%= kp25beş %>>
+     <input type="text" id="sp25beş" style="background-color: #ff00ec;" name="sp25beş" style="background-color: #ff00ec;" size="2" value=<%= sp25beş %>>
+
+
+      
+               <br><br>
+          <br>
+     <center><input type="submit" style="width: 500px; height: 80px;" value="Değişiklikleri Kaydet"></center></br>
+  </form> 
+  
+        </div>
+  </main></center>
+
+</body>
+</html>

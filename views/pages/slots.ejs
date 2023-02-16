@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+</head>
+<body class="container">
+
+    <header>
+        <%- include('../partials/slots/header'); %>
+    </header>
+
+   <center> <main>
+        <div class="jumbotron">
+            <h2>Dikkat Butona Tıklarsanız Tüm Takımların Tüm Puanları "0" Olur</h2>
+            <h2>Dikkat Butona Tıklarsanız Tüm Takımların Tüm Puanları "0" Olur</h2>
+            <h2>Dikkat Butona Tıklarsanız Tüm Takımların Tüm Puanları "0" Olur</h2>
+            <h2>Dikkat Butona Tıklarsanız Tüm Takımların Tüm Puanları "0" Olur</h2>
+            <h2>Dikkat Butona Tıklarsanız Tüm Takımların Tüm Puanları "0" Olur</h2>
+        
+          <br></br>
+  <center> <form id="slots-form" method="POST" action="/slots">
+
+
+          <br>
+   <center><input type="submit" style="width: 700px; height: 100px;" value="Tüm Puanları 0'la"></center></br>    </form> </center> 
+      
+
+        </div>
+  </main></center>
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+<script>
+    const options = {
+        bottom: '64px', // default: '32px'
+        right: '32px', // default: '32px'
+        time: '1.5s', // default: '0.3s'
+        backgroundColor: '#fff',  // default: '#fff'
+        buttonColorDark: '#100f2c',  // default: '#100f2c'
+        buttonColorLight: '#fff', // default: '#fff'
+        saveInCookies: true, // default: true,
+        label: '🌓', // default: ''
+        autoMatchOsTheme: true // default: true
+      }
+      
+      const darkmode = new Darkmode(options);
+      darkmode.showWidget();
+  
+  
+</script>
+</body>
+</html>
